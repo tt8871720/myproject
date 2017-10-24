@@ -16,15 +16,29 @@ System.out.println(i);
 //System.out.println((int)c2);
 boolean pass = true;
 System.out.println(!pass);
-String s = new String("Hello");
+
+String s = new String("Hellooooooooooo");
+String s2 = "ohohohoh";
 System.out.println(s);
+int len = s.length();
+System.out.println("len:"+ len);
+System.out.println(s.charAt(1));
 
 Random r = new Random();
 int n1 = (r.nextInt(6)+1);
 System.out.println(n1);
 System.out.println(r.nextInt(6)+1);
 System.out.println(9<2);
- 
+float x = 9.2f;
+int y = 5;
+float z = x/y;
+//int z = (int)(x/y);
+System.out.println(z);
+System.out.println(y>>1);
+
+//y--;
+y = y - 1;
+System.out.println(y);
 	}
 
 }
