@@ -39,6 +39,10 @@ System.out.println(y>>1);
 //y--;
 y = y - 1;
 System.out.println(y);
+String data = "123";
+int n = Integer.parseInt(data);
+String mydata = String.valueOf(n);
+
 	}
 
 }
