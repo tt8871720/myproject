@@ -9,17 +9,17 @@ public class VariableTester {
 int age = 0;
 float weight = (float)42.6;
 char c = 66;
-char c2 = 'Y';
+char c2 = 'Z';
 //
 int i = c2;
-System.out.println(i);
-//System.out.println((int)c2);
+System.out.println((int)c2);
+//System.out.println(i);
 boolean pass = true;
 System.out.println(!pass);
 
 String s = new String("Hellooooooooooo");
 String s2 = "ohohohoh";
-System.out.println(s);
+System.out.println(s2);
 int len = s.length();
 System.out.println("len:"+ len);
 System.out.println(s.charAt(1));
