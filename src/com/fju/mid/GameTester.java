@@ -10,12 +10,16 @@ public class GameTester {
 		int col = 5;
 		int i = -1;
 		int hp = 100;
-		while (i != 0) {
-			System.out.println(pos);
+		while (i != 0) {if(hp <0) {
+			System.out.println("Game over");
+			break;}
+			System.out.println("hp:" + hp);
+			System.out.println("pos:" + pos);
 			System.out.println("Please enter a number:");
 			Scanner scanner = new Scanner(System.in);
 			String line = scanner.nextLine();
 			i = Integer.parseInt(line);
+		
 			switch (i) {
 		
 			case 2:
@@ -29,26 +33,28 @@ public class GameTester {
 			
 			case 4:
 				System.out.println("向左");
-				if (pos == 4 & pos == 9 & pos == 14) {
+				if (pos % 5 !=0 ) {
 					pos = pos - 1;
-					hp = hp -5;}
+					hp = hp -5;}else {
+						hp = hp -30;
+					}
 					break;
 		
 			case 8:
 				System.out.println("向上");
-				if (pos / col >= 0) {
+				if (pos / col > 0) {
 					pos = pos - 5;
 					hp = hp -5 ;}else{
 						hp = hp -30;}
 break;
 			case 6:
 				System.out.println("向右");
-				if (pos / col >= 0) {
+				if (pos != 4&pos != 9&pos != 14) {
 					pos = pos + 1;	hp = hp -5 ;}else{
 		hp = hp -30;}
 					break;
-			default:
+		
 			}
-}
-
 }}
+
+}
