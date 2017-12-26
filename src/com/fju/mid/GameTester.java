@@ -19,9 +19,7 @@ public class GameTester {
 			Scanner scanner = new Scanner(System.in);
 			String line = scanner.nextLine();
 			i = Integer.parseInt(line);
-		
 			switch (i) {
-		
 			case 2:
 				System.out.println("向下");
 				if (pos / col <= roll - 1) {

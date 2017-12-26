@@ -3,7 +3,7 @@ package com.ibm;
 import java.util.Random;
 
 public class Dice {
-//https://litotom.com/fju1219/
+
 	public static void main(String[] args) {
 		for (int i = 0; i <=10; i++) {
 		Random r = new Random();
