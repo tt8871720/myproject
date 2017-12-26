@@ -15,7 +15,7 @@ public class Pbubble {
 				
 		}
 	}
-	for(int num :n) {
+	for(int num :n) {//num隨便設
 		System.out.print(num + " ");
 	}
 	}

@@ -3,7 +3,6 @@ package com.kao;
 import java.util.Scanner;
 
 public class Final {
-
 	public static void main(String[] args) {
 		int h = -1;
 		int p = 0;
