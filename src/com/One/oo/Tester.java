@@ -13,7 +13,6 @@ public class Tester {/*物件皆從類別Student而來*/
 			int avg = stu1.getAverage();
 			System.out.println(stu1.name + avg);
 			GraduateStudent grdst = new GraduateStudent();
-			grdst.thesis = 50;
 			grdst.print();
 	}
 
