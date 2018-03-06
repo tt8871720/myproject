@@ -1,13 +1,13 @@
 package com.java2.object;
 
 public class Listening extends TestTime {
-	int breaktime;
-public Listening(int testingtime , int starttime , int endtime , String necessity){
-super(testingtime);
-super.starttime = 1010;
-super.endtime = 1100;
-	super.necessity = "nothing";
-	
-	
+	private String necessity;
+public Listening(){
+	super();
+	super.starthour = 10;
+	super.startmins = 00;
+	super.testingtime = 80;
+	super.section = "Listening";
+
 }
 }
