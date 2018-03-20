@@ -11,7 +11,7 @@ public Listening(){
 
 }
 @Override 
-public  void print(){
+public void print(){
 	System.out.print(section + ":" + starthour + startmins + "~" + endhour + endmins + "necessity:" + necessity);
 }
 }
