@@ -6,20 +6,21 @@ public class ABNumber {
 String num;
 public ABNumber(String num){
 	this.num = num; 
-}}
-/*public validate(){
+}
+public int validate(String secret){
+	int result = 0;
 	int length = secret.length();
-	int len = number.length();
+	int len = num.length();
 	for (int i = 0; i < length; i++) {
 		for (int j = 0; j < len; j++) {
 			char s = secret.charAt(i);
-			char n = number.charAt(j);
+			char n = num.charAt(j);
 			if (s == n & i == j) {
-				int result = result + 10;
+				result = result + 10;
 				//break;
 			} else {
 				if (s == n) {
-				int result = result + 1; 
+				result = result + 1; 
 				}
 
 			}
@@ -27,5 +28,6 @@ public ABNumber(String num){
 		}
 
 	}
+	return result;
 }
-}*/
+}

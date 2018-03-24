@@ -13,7 +13,8 @@ int result = 0;
 while(result != 40){
 	System.out.print("請輸入一組數字");
 	ABNumber n = new ABNumber(scanner.nextLine());
-	//result =n.validate();
+	result =n.validate(secret);
+	System.out.println((result/10) + "A" + (result%10) + "B");
 	
 }
 	
