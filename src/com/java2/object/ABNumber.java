@@ -7,6 +7,7 @@ String num;
 public ABNumber(String num){
 	this.num = num; 
 }
+//驗證validate
 public int validate(String secret){
 	int result = 0;
 	int length = secret.length();
