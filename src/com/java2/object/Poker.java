@@ -6,7 +6,6 @@ public class Poker {
 	String flowers = "SDHC";
 	int cards[] = new int[52];
 	Random random = new Random();
-
 	public Poker() {
 		for (int i = 0; i < cards.length; i++) {
 			cards[i] = i;

@@ -1,29 +1,31 @@
 package com.java2.object;
 
 import java.util.ArrayList;
-import java.util.List;
-
-import com.One.snow.Random;
+import java.util.Random;
 
 public class Poker2 {
-	Random random = new Random();
 	String flowers = "SDHC";
-	List<Integer> cards = new ArrayList<>();
-//定義Array大小
+	ArrayList<Integer> cards = new ArrayList<>();
+	Random random = new Random();
+
 	public Poker2() {
-		for (int i = 0; i < 6; i++) {
-			for (int j = 0; j < 14; j++) {
-				for (int n = 0; n < 52; n++) {
-				int c = flowers.charAt(i);
-				cards.set(n,j +c);
-			}
-}
+		for (int i = 0; i < 52; i++) {
+			cards.add((i % 13) + 1);
+			System.out.println(cards.get(i) + "" + flowers.charAt(i / 13));
 		}
 	}
-	public void shuffle() {
-for (int i = 0; i < cards.size(); i++) {
-//	int s =
-}
-	}
 
-}
+	public void shuffle2() {
+		for (int i = 0; i < 52; i++) {
+			int c = random.nextInt(52);
+			cards.set(i,c);
+			System.out.print((cards.get(i) % 13) +1 + "" +
+			flowers.charAt(cards.get(i) / 13) + " ");
+			if(i % 13 == 0) {
+				System.out.println();
+			}
+	}}
+	
+
+
+	}
