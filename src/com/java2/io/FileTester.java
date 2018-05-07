@@ -8,7 +8,7 @@ public class FileTester {
 
 	public static void main(String[] args) {
 	try {
-		FileOutputStream out = new FileOutputStream("data.txt");
+		FileOutputStream out = new FileOutputStream("cat.txt");
 		out.write(66);
 		out.write(99);
 		out.write(101);
