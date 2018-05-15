@@ -1,6 +1,12 @@
 package com.java2.threading;
 
+import java.util.List;
+
 public class Horse extends Thread {
+	public Horse(){
+		List<Horse>list;
+	
+	}
 	@Override
 	public void run() {
 
