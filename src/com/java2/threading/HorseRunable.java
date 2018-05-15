@@ -12,6 +12,7 @@ public class HorseRunable implements Runnable//當有繼承其他類別時可用
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			
 		}
 	}
 }
