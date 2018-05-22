@@ -1,6 +1,6 @@
 package com.java2.threading;
 
-public class HorseRunable implements Runnable//當有繼承其他類別時可用
+public class HorseRunable implements Runnable//實作介面,當有繼承其他類別時可用
 {
 	@Override
 	public void run() {
