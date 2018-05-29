@@ -3,7 +3,6 @@ package com.java2.object;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.One.snow.Random;
 
 public class Poker2Tester {
 
