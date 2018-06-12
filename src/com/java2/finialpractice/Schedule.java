@@ -17,8 +17,8 @@ public class Schedule {
 try {
 	FileReader fr = new FileReader("schedule.txt");
 	BufferedReader bf = new BufferedReader(fr);
-	String line = bf.readLine();
-	
+	String line = bf.readLine();//讀一行(第一行)
+	System.out.println(line);
 } catch (FileNotFoundException e) {
 	// TODO Auto-generated catch block
 	e.printStackTrace();
