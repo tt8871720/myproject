@@ -22,7 +22,6 @@ while(data != 0){
 	data = scanner.nextInt();
 	switch(data){
 	case 0 :
-
 		break;
 	}
 	

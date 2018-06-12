@@ -14,7 +14,7 @@ public Maze(){
 int colum  = Integer.parseInt(token[0]);
 int row = Integer.parseInt(token[1]);
 line.split(",");
-int tra
+
 	
 }
 
