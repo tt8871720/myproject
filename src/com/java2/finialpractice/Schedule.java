@@ -19,7 +19,6 @@ public class Schedule {
 
 	public static void main(String[] args) {
 Schedule schedule = new Schedule();
-List<Course> course = new ArrayList<>();
 		try {
 			FileReader fr = new FileReader("schedule.txt");
 			BufferedReader bf = new BufferedReader(fr);
@@ -35,8 +34,8 @@ List<Course> course = new ArrayList<>();
 			int start = Integer.parseInt(tokens[3]);
 		int hours = Integer.parseInt(tokens[4]);
 		int end = start + hours;
-((List<Course>) schedule.course).add(new Course(id , subject , day , start , hours));
-		
+		((List<Course>) schedule.course).add(new Course(id , subject , day , start , hours));
+
 			}}
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
