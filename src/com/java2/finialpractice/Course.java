@@ -1,8 +1,14 @@
 package com.java2.finialpractice;
 
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
+
+
 public class Course {
+	
 String  id;
 String subject;
 int day;
@@ -45,7 +51,9 @@ public int getHours() {
 public void setHours(int hours) {
 	this.hours = hours;
 }
-
+public void check () {
+	
+}
 	
 }
 
