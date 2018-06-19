@@ -21,6 +21,9 @@ public Course(String id, String subject , int day , int start , int hours ){
 	  this.start = start;
 	  this.hours = hours;
 }
+public boolean available(){
+	
+}
 public String getId() {
 	return id;
 }
