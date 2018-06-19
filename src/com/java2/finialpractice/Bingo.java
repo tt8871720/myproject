@@ -12,10 +12,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Bingo {
-public class Play{
-	Scanner scan = new Scanner(System.in);
-	
-}
+	List<Integer> num = new ArrayList<>();
 	public static void main(String[] args) {
 		List<Integer> num = new ArrayList<>();
 		try {
@@ -49,5 +46,19 @@ public class Play{
 		}
 
 	}
+	public void play(){
+		int a = 0;
+		while(a != 0) {
+			System.out.println("請輸入一個數字");
+		Scanner scan = new Scanner(System.in);
+		int enter = scan.nextInt();
+	int chose = 0;
+		for (int i = 0; i < num.size() ; i++) {
+			if(enter == num.get(i)) {
+				int c= num.get(i);
+			 c = chose; 
+			}
+		}
+	}}
 
 }
