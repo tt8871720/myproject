@@ -14,7 +14,13 @@ import java.util.Scanner;
 public class Bingo {
 	List<Integer> num = new ArrayList<>();
 	public static void main(String[] args) {
+	Bingo bingo = new Bingo ();
+	bingo.print();
+	bingo.play();
+	}
+	public void print(){
 		List<Integer> num = new ArrayList<>();
+		
 		try {
 			FileReader fi = new FileReader("bingo.txt");
 			BufferedReader bu = new BufferedReader(fi);
@@ -46,8 +52,9 @@ public class Bingo {
 		}
 
 	}
+	
 	public void play(){
-		int a = 0;
+		int a = 1;
 		while(a != 0) {
 			System.out.println("請輸入一個數字");
 		Scanner scan = new Scanner(System.in);
@@ -57,6 +64,7 @@ public class Bingo {
 			if(enter == num.get(i)) {
 				int c= num.get(i);
 			 c = chose; 
+			 System.out.print(num.get(i));
 			}
 		}
 	}}
