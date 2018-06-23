@@ -21,9 +21,7 @@ public Course(String id, String subject , int day , int start , int hours ){
 	  this.start = start;
 	  this.hours = hours;
 }
-public boolean available(){
-	
-}
+
 public String getId() {
 	return id;
 }
@@ -54,8 +52,13 @@ public int getHours() {
 public void setHours(int hours) {
 	this.hours = hours;
 }
-public void check () {
+public boolean isAvailable(int day , int start){
+	Boolean avail; //= false;
+	if(this.day == day && (start + hours) > this.start && start < this.start) 
+	//沒課
+		avail = true;
 	
+	return avail = true;
 }
 	
 }

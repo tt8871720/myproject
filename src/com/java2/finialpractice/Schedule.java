@@ -17,50 +17,55 @@ public class Schedule {
 	List<Course> courses = new ArrayList<>();
 
 	public Schedule() {
-	read(); 
-	Scanner scanner = new Scanner(System.in);
-	System.out.println("歡迎使用查詢系統 ");
-	int day = scanner.nextInt();
-	System.out.println("請輸入星期(1-7)");
-	int start = scanner.nextInt();
-/*boolean avail = true
- * for(Course c : courses){
- * if(!c.isAvailable(day , start)){
- *System.out.println("有課 + ......");
- * avail = false;
- * break;
- * }}
- * if(avail){
- * System.out.println("空堂");
- * }
- * */	}	
-public void read(){
-	try {
-		FileReader fr = new FileReader("schedule.txt");
-		BufferedReader bf = new BufferedReader(fr);
-		String line = bf.readLine();// 讀一行(第一行)
-		String[] tokens = line.split(",");
-		int count = Integer.parseInt(tokens[0]);
-		while (line != null) {
-			line = bf.readLine();// 再讀一行(二三四行一直讀下去)
-			for (int a = 0; a == 4; a++) {
-				String id = tokens[0] + 1;
-				String subject = tokens[1];
-				int day = Integer.parseInt(tokens[2]);
-				int start = Integer.parseInt(tokens[3]);
-				int hours = Integer.parseInt(tokens[4]);
+		read();
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("歡迎使用查詢系統 ");
+		
+		System.out.println("請輸入星期(1-7)");
+		int day = scanner.nextInt();
+		System.out.println(" 請輸入時(0-24)");
+		int start = scanner.nextInt();
+	boolean avail = true;
+		for (Course c : courses) {
+			if (!c.isAvailable(day, start)) {
+				avail = false;
+			System.out.println("有課 + ......");		
+				break;
 			}
 		}
-	} catch (FileNotFoundException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	} catch (IOException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
+		if (avail) {	
+			System.out.println("空堂");
+			
+		}
+	}
+
+	public void read() {
+		try {
+			FileReader r = new FileReader("schedule.txt");
+			BufferedReader in = new BufferedReader(r);
+			String line = in.readLine();// 讀一行(第一行)
+			String[] tokens = line.split(",");
+			while (line != null) {
+				line = in.readLine();// 再讀一行(二三四行一直讀下去)
+				for (int a = 0; a == 4; a++) {
+					String id = tokens[0];
+					String subject = tokens[1];
+					int day = Integer.parseInt(tokens[2]);
+					int start = Integer.parseInt(tokens[3]);
+					int hours = Integer.parseInt(tokens[4]);
+					courses.add(new Course(id, subject, day, start, hours));
+				}
+			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) {
+new Schedule();
 	}
 }
-
-	
-	public static void main(String[] args) {
-
-}}

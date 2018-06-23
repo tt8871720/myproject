@@ -5,6 +5,7 @@ public class Drink {
 	String name;
 	int price;
 public  Drink(){
+	
 	//成為Java Bean的條件要有空建構值+Getter、Setter
 }
 	public Drink(int id, String name, int price) {
